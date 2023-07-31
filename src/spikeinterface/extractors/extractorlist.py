@@ -26,6 +26,8 @@ from .cbin_ibl import CompressedBinaryIblExtractor, read_cbin_ibl
 from .iblstreamingrecording import IblStreamingRecordingExtractor, read_ibl_streaming_recording
 from .mcsh5extractors import MCSH5RecordingExtractor, read_mcsh5
 
+from .rippleextractor import RippleExtractor
+
 # sorting extractors in relation with a sorter
 from .cellexplorersortingextractor import CellExplorerSortingExtractor, read_cellexplorer
 from .klustaextractors import KlustaSortingExtractor, read_klusta
@@ -71,6 +73,7 @@ recording_extractor_full_list = [
     CompressedBinaryIblExtractor,
     IblStreamingRecordingExtractor,
     MCSH5RecordingExtractor,
+    RippleExtractor,
 ]
 recording_extractor_full_list += neo_recording_extractors_list
 
